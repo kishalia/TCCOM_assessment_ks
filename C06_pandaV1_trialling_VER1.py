@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Sample data (you can adjust these lists as needed)
+# Sample data 
 distance = [2, 3, 4]
 gradient = [1.5, 2.0, 2.5]
 midpoint = [(1, 2), (2, 3), (3, 4)]
@@ -21,10 +21,10 @@ coordinate_geometry_dict = {
 # Create the DataFrame
 coordinate_geometry_calculator_frame = pd.DataFrame(coordinate_geometry_dict)
 
-# Set pandas display options to show all columns completely
+# Set pandas display options to show all columns 
 pd.set_option('display.max_columns', None)  # Show all columns
 pd.set_option('display.expand_frame_repr', False)  # Prevent the DataFrame from being truncated
 
-# Print the DataFrame with formatted headers
+# Print the DataFrame with heading
 print("COORDINATE GEOMETRY CALCULATOR:")
 print(coordinate_geometry_calculator_frame.to_string(index=False))
